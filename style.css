@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #e7edf7;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    background-image: url('download.jpg');
+    background-size: cover; /* Ensures the image covers the entire canvas */
+    background-position: center;
+}
+
+#view {
+    margin-top: 30px;
+    position: relative;
+}
+
+#mazeContainer {
+    margin: auto;
+    border-radius: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+#mazeContainer #mazeCanvas {
+    margin: 0;
+    display: block;
+    border: solid 2px black;
+    height: 400px;
+   
+}
+
+#instruction {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+input, select {
+    cursor: pointer;
+    background-color: rgba(26, 24, 25, 0.3);
+    height: 45px;
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    appearance: none;
+}
+
+input:hover, select:hover {
+    background-color: rgba(19, 18, 18, 0.7);
+}
+
+input:active, select:active {
+    background-color: black;
+}
+
+input:focus, select:focus {
+    outline: none;
+}
+
+.custom-select {
+    display: inline-block;
+}
+
+.custom-select select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: 125px center;
+}
+
+#Message-Container {
+    visibility: hidden;
+    color: white;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.30);
+    z-index: 1;
+}
+
+#Message-Container #message {
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+}
+
+#page {
+    text-align: center;
+    height: auto;
+    width: auto;
+    margin: auto;
+}
+
+#page #menu {
+    margin: auto;
+    padding: 10px;
+    height: 65px;
+    box-sizing: border-box;
+}
+
+#page #menu h1 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 3.2rem;
+}
+
+#page #view {
+    position: relative;
+    width: 100%;
+}
+
+.border {
+    border: 10px black solid;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 400px) {
+    input, select {
+        width: 120px;
+    }
+}
